@@ -22,14 +22,19 @@
     --fonte-2-bold: 'fonte02';
     --fonte-3-black: 'fonte03';
     --fonte-4-texto: 'fonte04';
-    --tamanho: 20px;
+    
 }
-
-body {
-    font-size: var(--tamanho);
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body, html  {
+    min-height: 100vh;
+    
+    
 }
 header {
-      margin: -27px -8px 0px -8px;
+    
     text-align: center;
     background-color: black;
     color: white;
@@ -37,10 +42,8 @@ header {
 }
 
 header h1 {
-    font-family: var(--fonte-2-bold);
-    font-size: 40px;
-    padding-top: 60px;
-    margin-bottom: -20px;
+    font-variant: small-caps;
+    padding-top: 50px;
 }
 
 header p {
@@ -49,16 +52,14 @@ header p {
 }
 section {
     font-family: var(--fonte-4-texto);
+    padding-bottom: 10vh;
+    padding-top: 10vh;
     line-height: 2em;
+    padding-left: 30px;
 }
 
-section p {
-    padding: 15px;
-}
-section.normal {
-    padding-bottom: 50px;
-    padding-top: 25px;
-}
+
+
 
 section.img1 {
     background-image: url(imagens/background001.jpg);
@@ -68,12 +69,7 @@ section.img1 {
     background-attachment: fixed;
     color: white;
 }
- #cinza {
-   
-    background-color: rgba(0, 0, 0, 0.336);
-    width: 200px;
-   
- }
+
 section.img2 {
 
     background-image: url(imagens/background002.jpg);
@@ -88,13 +84,14 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    margin: 1px -8px -8px -8px;
-    padding: 10px 1px 10px 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
 a:hover {
