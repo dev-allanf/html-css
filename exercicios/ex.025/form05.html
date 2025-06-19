@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 05</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="mas" value="M">
+            <label for="mas">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="fem" value="F">
+            <label for="fem">Feminino</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Artes Marciais Favoritas</legend>
+            
+            <input type="checkbox" name="judo" id="ijudo">
+            <label for="ijudo">Judô</label> <br>
+            
+            <input type="checkbox" name="boxe" id="iboxe">
+            <label for="iboxe">Boxe</label>  <br>
+
+            <input type="checkbox" name="cap" id="icap">
+            <label for="icap">Capoeira</label> <br>
+
+            <input type="checkbox" name="jiu" id="ijiu">
+            <label for="ijiu">Jiu-Jitsu</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
