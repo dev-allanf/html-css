@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 07</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+
+                <optgroup label="Nordeste">
+                <option value="PE">Pernambuco</option>
+               
+                <option value="BA" selected>Bahia</option>
+                <option value="CE">Ceará</option>
+            </optgroup>
+        </p>
+
+
+        <optgroup label="Sudeste">
+            <option value="RJ">Rio de Janeiro</option>
+
+            <option value="SP">São Paulo</option>
+
+            <option value="MG">Minas Gerais</option>
+
+
+        </optgroup>
+            </select>
+
+            <p>
+                <label for="icdd">Cidade PE:</label>
+
+                <input type="text" name="cdd" id="icdd" list="cidade">
+
+                <datalist id="cidade">
+                    <option>Recife</option>
+                    <option>Olinda</option>
+                    <option>Boa Viagem</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10">
+
+                </textarea>
+            </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+
+    </form>
+</body>
+</html>
