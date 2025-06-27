@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Estilos p tela */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: lightslategrey;
+}
+
+
+header {
+    background-color: gray;
+}
+
+header h1  {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: lightgray;
+}
+
+menu li {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+article {
+    background-color: white;
+    margin: auto;
+    max-width: 600px;
+}
