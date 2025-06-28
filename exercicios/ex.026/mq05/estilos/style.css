@@ -20,6 +20,7 @@ header {
 header > h1 {
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 #burguer {
@@ -31,6 +32,7 @@ header > h1 {
 
 #burguer:hover {
     background-color: rgba(255, 255, 255, 0.521);
+    transition-duration: .5s;
     color: black;
     cursor: pointer;
 }
