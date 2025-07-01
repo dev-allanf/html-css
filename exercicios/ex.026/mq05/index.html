@@ -38,21 +38,22 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur deserunt nisi, vero molestiae maiores tempora quae libero tenetur ipsum repellendus doloribus consequatur et! Amet, iusto nihil enim mollitia quos velit.</p>
         </article>
     </main>
-    <script>
-        function clickMenu () {
-          if (itens.style.display == 'block') {
-            itens.style.display = 'none'
-          } else {
-            itens.style.display = 'block'
-          }
-        }
+
+<script>
 
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
-            }
-            else {
+            } else {
                 itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
             }
         }
     </script>
