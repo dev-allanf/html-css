@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* Mobile First */
-
 * {
     padding: 0px;
     margin: 0px;
@@ -13,16 +11,66 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+header > h1 {
+    
+    padding: 10px;
+    flex: 0 0 200px;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+}
+header > nav > a{
+    padding: 10px;
+    margin: 5px;
+    background-color: black;
+    color: lightgray;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+header a:hover {
+    background-color: rgba(168, 168, 168, 0.438);
+    transition: background-color .5s;
+}
+
+main {   
+    margin: 10px;
+    background-color: white;
+
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 563px) {
+   
+
+/* Mobile First */
+
 header {
     background-color: gray;
     text-align: center;
-}
-
-header h1 {
     color: white;
+    display: flex;
+    justify-content: center;
+
 }
 
-header  a {
+header > nav > a {
     padding: 10px;
     margin: auto;
     display: block;
@@ -41,9 +89,5 @@ header a:hover {
     background-color: rgba(168, 168, 168, 0.438);
 }
 
-main {   
-    margin: 10px;
-    background-color: white;
 
-    border-radius: 5px;
 }
